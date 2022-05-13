@@ -12,4 +12,4 @@ function conectar()
     mysqli_select_db($con, $db);
 
     return $con;
-} gfgdf
+}
