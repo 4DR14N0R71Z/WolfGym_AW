@@ -30,7 +30,7 @@
       </article>
     </section>
     <section id="about">
-      <h2>Coaches</h2>
+      <h2>Coachessss</h2>
     </section>
     <section id="product">
       <h2>Equipo</h2>
