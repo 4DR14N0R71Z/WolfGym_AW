@@ -11,7 +11,8 @@ $resultado = mysqli_query($con, $consulta);
 
 $filas = mysqli_num_rows($resultado);
 if ($filas) {
-    echo "Bienvenido " . $uname;
+
+    header("Location:home.php");
 } else {
 ?>
     <h1>Error de autenticación</h1>

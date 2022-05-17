@@ -6,7 +6,7 @@
   <title>Wolf Gym</title>
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="images/WG.png" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, user-scalable=none initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 <body>
@@ -16,10 +16,10 @@
         <a href="#"><img src="images/WG.png" alt="Logo de WolfGym"></a>
         <ul id="menu">
           <li><a href="#home">Inicio</a></li>
-          <li><a href="#about">Coaches</a></li>
-          <li><a href="#product">Equipo</a></li>
-          <li><a href="#pricing">Actividades</a></li>
-          <li><a href="#contact">Contacto</a></li>
+          <li><a href="#coaches">Coaches</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#actividades">Actividades</a></li>
+          <li><a href="#contacto">Contacto</a></li>
           <li><a href="#login">Iniciar sesión</a></li>
         </ul>
       </header>
@@ -29,16 +29,16 @@
           ipsa totam porro minus cumque dolor hic qui. Consequuntur saepe magnam ullam laudantium esse quaerat!</p>
       </article>
     </section>
-    <section id="about">
-      <h2>Coachessss</h2>
+    <section id="coaches">
+      <h2>Coaches</h2>
     </section>
-    <section id="product">
+    <section id="equipo">
       <h2>Equipo</h2>
     </section>
-    <section id="pricing">
+    <section id="actividades">
       <h2>Actividades</h2>
     </section>
-    <section id="contact">
+    <section id="contacto">
       <h2>Contacto</h2>
     </section>
     <section id="login">
