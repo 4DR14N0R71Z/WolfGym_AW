@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Wolf Gym</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="images/WG.png" type="image/x-icon">
   <meta name="viewport" content="width=device-width, user-scalable=none initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>

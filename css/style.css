@@ -46,7 +46,7 @@ header {
 #menu li {
   list-style: none;
   display: inline-block;
-  margin: 20px;
+  margin: 10px;
 }
 
 #menu li a {
@@ -55,6 +55,9 @@ header {
   font-size: 20px;
 }
 
+#menu li a:hover {
+  color: rgb(141, 248, 220);
+}
 section {
   width: 100%;
   float: left;
@@ -93,7 +96,7 @@ section {
   transform: translate(-50%, -50%);
   color: #fff;
   font-size: 50px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   letter-spacing: 1px;
 }
 
@@ -116,7 +119,6 @@ header img {
   margin-top: -18px;
 }
 
-
 /* Bordered form */
 form {
   border: 3px solid #474747f1;
@@ -128,8 +130,8 @@ form {
 }
 
 /* Full-width inputs */
-input[type=text],
-input[type=password] {
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 10px;
@@ -140,7 +142,7 @@ input[type=password] {
 
 /* Set a style for all buttons */
 button {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -188,7 +190,6 @@ span.psw {
   padding-top: 16px;
 }
 
-
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 1024px) {
   span.psw {
@@ -196,7 +197,7 @@ span.psw {
     float: none;
   }
 
-  .contenedor h2{
+  .contenedor h2 {
     color: #ffffff;
     margin-left: 25%;
   }
@@ -223,7 +224,8 @@ span.psw {
   .cancelbtn {
     width: 100%;
   }
-  input[type=text], input[type=password]{
+  input[type="text"],
+  input[type="password"] {
     margin-left: 0;
     margin-right: 0;
   }
@@ -234,7 +236,7 @@ span.psw {
     float: none;
   }
 
-  .contenedor h2{
+  .contenedor h2 {
     color: #ffffff;
     margin-left: 25%;
   }
@@ -261,34 +263,35 @@ span.psw {
   .cancelbtn {
     width: 100%;
   }
-  input[type=text], input[type=password]{
+  input[type="text"],
+  input[type="password"] {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
-a {
+/*a {
   color: white;
-}
+}*/
 
- @media screen and (max-width: 450px) {
-  
+@media screen and (max-width: 450px) {
   span.psw {
     display: block;
     float: left;
   }
 
-  input[type=text], input[type=password]{
+  input[type="text"],
+  input[type="password"] {
     margin-left: 0;
     margin-right: 0;
   }
 
-  .contenedor h2{
+  .contenedor h2 {
     color: #ffffff;
     margin-left: 25%;
     font-size: 20px;
     margin-top: 30px;
-    }
+  }
 
   header {
     width: 10%;
@@ -300,7 +303,7 @@ a {
     margin-top: 20%;
     margin-left: 25%;
     box-sizing: border-box;
-    }
+  }
 
   header img {
     width: 90px;
@@ -312,51 +315,49 @@ a {
 
   .cancelbtn {
     width: 100%;
-   }
+  }
 
   /* Avatar image */
   img.avatar {
-  width: 30%;
-  height: 30%;
-  border-radius: 5px;
-  align-items: center;
-  margin-top: -30px;
-  margin-left: 1%;
-}
+    width: 30%;
+    height: 30%;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: 1%;
+  }
 
-#menu li {
-  list-style: none;
-  display: inline;  
-}
+  #menu li {
+    list-style: none;
+    display: inline;
+  }
 
-#menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  display: inline-block;
-}
-
-
+  #menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width: 399px) {
-  
   span.psw {
     display: block;
     float: left;
   }
 
-  input[type=text], input[type=password]{
+  input[type="text"],
+  input[type="password"] {
     margin-left: 0;
     margin-right: 0;
   }
 
-  .contenedor h2{
+  .contenedor h2 {
     color: #ffffff;
     margin-left: 25%;
     font-size: 20px;
     margin-top: 30px;
-    }
+  }
 
   header {
     width: 10%;
@@ -368,7 +369,7 @@ a {
     margin-top: 20%;
     margin-left: 25%;
     box-sizing: border-box;
-    }
+  }
 
   header img {
     width: 80px;
@@ -380,31 +381,27 @@ a {
 
   .cancelbtn {
     width: 100%;
-   }
+  }
 
   /* Avatar image */
   img.avatar {
-  width: 30%;
-  height: 30%;
-  border-radius: 5px;
-  align-items: center;
-  margin-top: -30px;
-  margin-left: 1%;
-}
+    width: 30%;
+    height: 30%;
+    border-radius: 5px;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: 1%;
+  }
 
-#menu li {
-  list-style: none;
-  display: inline;  
-}
+  #menu li {
+    list-style: none;
+    display: inline;
+  }
 
-#menu li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 15px;
-  display: inline-block;
-}
-}
-
-a {
-  color: white;
+  #menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+  }
 }
