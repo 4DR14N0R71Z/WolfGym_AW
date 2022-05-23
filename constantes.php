@@ -4,9 +4,9 @@
 
 function conectar()
 {
-    $user = "sql3491433";
-    $pass = "BfD4H1eHTj";
-    $server = "sql3.freesqldatabase.com";
+    $user = "root";
+    $pass = "";
+    $server = "";
     $db = "sql3491433";
     $con = mysqli_connect($server, $user, $pass) or die("Error al conectar al servidor");
     mysqli_select_db($con, $db);
