@@ -1,18 +1,20 @@
 <?php
-$uname = $_POST['uname'];
+$uname = $_POST['email'];
 $pass = $_POST['psw'];
 
 session_start();
 $_SESSION['uname'] = $uname;
 
 include('connection.php');
-$consulta = "SELECT*FROM log where usuario='" . $uname . "' and pass='" . $pass . "'";
+$consulta = "SELECT*FROM users where email='$uname' and password='$pass'";
 $resultado = mysqli_query($con, $consulta);
 
 $filas = mysqli_num_rows($resultado);
-if ($filas) {
 
-    header("Location:home.php");
+if ($filas) {
+    echo '<script>
+    window.location="home.html";
+ </script>';
 } else {
 ?>
     <h1>Error de autenticación</h1>
