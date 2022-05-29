@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -27,6 +29,100 @@ header,
 }
 
 /*css reset*/
+.Blema,
+.Blema2 {
+  display: inline-block;
+  font-size: 85px;
+  line-height: 85px;
+  font-family: "Bungee", cursive;
+  width: 570px;
+  height: 92px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  background-color: rgba(238, 238, 238, 0.152);
+  position: absolute;
+}
+.Blema {
+  overflow: cover;
+  top: -20%;
+  right: 0;
+  left: -45%;
+  bottom: 0;
+  margin: auto;
+  border-radius: 10px 10px 0px 0px;
+  text-align: center;
+  padding-left: 10px;
+  -webkit-text-stroke: 2px white;
+  color: black;
+}
+.Blema2 {
+  overflow: hidden;
+  top: 100%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+}
+
+.Blema ul {
+  margin-top: 80px;
+  list-style: none;
+  padding-left: 20px;
+  animation: cambiar 10s infinite;
+  text-align: center;
+  font-family: "Bungee", cursive;
+  -webkit-text-stroke: 2px black;
+  color: #fff;
+}
+
+.Blema ul,
+.Blema p {
+  margin: 0;
+  font-family: "Bungee", cursive;
+}
+
+@keyframes cambiar {
+  0% {
+    margin-top: 0;
+  }
+  20% {
+    margin-top: 0;
+  }
+  25% {
+    margin-top: -85px;
+  }
+  50% {
+    margin-top: -85px;
+  }
+  55% {
+    margin-top: -170px;
+  }
+  80% {
+    margin-top: -170px;
+  }
+  85% {
+    margin-top: -85px;
+  }
+  95% {
+    margin-top: -85px;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0;
+  right: 0;
+  margin-top: -10%;
+  bottom: 0;
+  z-index: -2;
+  position: relative;
+}
 
 .contenedor {
   margin: 0;
@@ -153,7 +249,7 @@ header .nav {
   display: inline-block;
   position: fixed;
   margin-left: 33%;
-  margin-top: -11.5%;
+  margin-top: -15.5%;
   background-color: #f4f3f3;
   border-radius: 5px;
   box-sizing: border-box;
@@ -324,6 +420,108 @@ span.psw {
   padding-top: 16px;
 }
 
+@media screen and (max-width: 375px) {
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0;
+    right: 0;
+    margin-top: -32.8%;
+    bottom: 0;
+    z-index: -2;
+    position: relative;
+  }
+
+  header .nav {
+    display: none;
+    opacity: 0;
+  }
+
+  .Blema,
+  .Blema2 {
+    display: inline-block;
+    font-size: 50px;
+    line-height: 50px;
+    font-family: "Bungee", cursive;
+    width: 300px;
+    height: 50px;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    background-color: rgba(238, 238, 238, 0.152);
+    position: absolute;
+  }
+  .Blema {
+    overflow: cover;
+    top: -40%;
+    right: 0;
+    left: -10%;
+    bottom: 0;
+    margin: auto;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    padding-left: 10px;
+    -webkit-text-stroke: 2px white;
+    color: black;
+  }
+  .Blema2 {
+    overflow: hidden;
+    top: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border-radius: 0px 0px 10px 10px;
+    text-align: center;
+  }
+
+  .Blema ul {
+    margin-top: 80px;
+    list-style: none;
+    padding-left: 20px;
+    animation: cambiar 10s infinite;
+    text-align: center;
+    font-family: "Bungee", cursive;
+    -webkit-text-stroke: 2px black;
+    color: #fff;
+  }
+
+  .Blema ul,
+  .Blema p {
+    margin: 0;
+    font-family: "Bungee", cursive;
+  }
+
+  @keyframes cambiar {
+    0% {
+      margin-top: 0;
+    }
+    20% {
+      margin-top: 0;
+    }
+    25% {
+      margin-top: -50px;
+    }
+    50% {
+      margin-top: -50px;
+    }
+    55% {
+      margin-top: -100px;
+    }
+    80% {
+      margin-top: -100px;
+    }
+    85% {
+      margin-top: -50px;
+    }
+    95% {
+      margin-top: -50px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+}
+
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 1920px) {
   .boxtext {
@@ -490,16 +688,28 @@ span.psw {
     align-items: baseline;
     position: fixed;
     z-index: 999;
-    margin-top: 4%;
+    margin-top: 6.5%;
     margin-left: 17%;
   }
 
+  header .nav {
+    display: inline-block;
+    position: fixed;
+    margin-left: 33%;
+    margin-top: -8.5%;
+    background-color: #f4f3f3;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #131313;
+  }
+
   header img {
-    width: 90px;
-    height: 90px;
+    width: 120px;
+    height: 120px;
     position: absolute;
     margin-left: -770%;
     margin-top: -260%;
+    z-index: 999;
   }
 
   .cancelbtn {
