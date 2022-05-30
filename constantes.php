@@ -7,7 +7,7 @@ function conectar()
     $user = "root";
     $pass = "";
     $server = "";
-    $db = "sql3491433";
+    $db = "log";
     $con = mysqli_connect($server, $user, $pass) or die("Error al conectar al servidor");
     mysqli_select_db($con, $db);
 

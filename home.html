@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Wolf Gym</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="images/FLogo.png" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, user-scalable=none initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="nav"></div>
+    <section id="home">
+      <div class="himg"><a href="#"><img src="images/FLogo.png" alt="Logo de WolfGym"></a></div>
+      <header>
+        <div class="nav">
+          <ul id="menu">
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#actividades">Actividades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#logout">Cerrar sesión</a></li>
+          </ul>
+        </div>
+      </header>
+      <article class="boxtext">
+        <p class="Pboxtext">
+        <h2>Inicio</h2>boxtext1Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam illo, ad ullam, voluptatem rerum,
+        ipsa totam porro minus cumque dolor hic qui. Consequuntur saepe magnam ullam laudantium esse quaerat!</p>
+      </article>
+      <article class="boxtext2">
+        <p class="Pboxtext">
+        <h3>Misión</h3>BT2Ser el centro de fitness más grande de latinoamérica y el mundo</p>
+      </article>
+      <article class="boxtext3">
+        <p class="Pboxtext">BT3Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, corrupti. Praesentium blanditiis minus amet eaque fugiat temporibus modi aliquid quod laudantium. Mollitia repellat dignissimos porro saepe beatae cupiditate, veritatis accusamus.</p>
+      </article>
+    </section>
+    <section id="contacto">
+      <h2>Contacto</h2>
+    </section>
+    <section id="actividades">
+      <h2>Actividades</h2>
+    </section>
+    <section id="logout">
+      <h2>Cerrar sesión</h2>
+
+      <form action="login.php" method="post">
+        <div class="imgcontainer">
+          <img src="images/FLogo.png" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Correo Electrónico</b></label>
+          <input type="email" placeholder="email" name="email" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Contraseña" name="psw" required>
+
+          <button type="submit">Login</button>
+          <p><center>No tengo cuenta, <a href="#register">crear una</a></center></p>
+        </div>
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>
