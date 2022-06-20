@@ -126,7 +126,7 @@ video {
 
 .galeria {
   font-family: "open sans";
-  margin-top: 13%;
+  margin-top: 8%;
 }
 
 .contenedor-imagenes {
@@ -165,16 +165,17 @@ video {
 
 .Cdescriptions {
   color: #fff;
-  font-size: 20px;
+  font-size: 12px;
   position: absolute;
   top: 50%;
   margin-left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
+  width: 100%;
 }
 .imagen:hover .overlay .Cdescriptions {
   color: #fff;
-  font-size: 20px;
+  font-size: 15px;
   position: absolute;
   top: 50%;
   margin-left: 50%;
@@ -183,8 +184,9 @@ video {
 }
 
 .Cname {
+  width: 100%;
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   position: absolute;
   top: 10%;
   margin-left: 50%;
@@ -199,12 +201,106 @@ video {
 
 .imagen:hover .overlay .Cname {
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   position: absolute;
   top: 10%;
   margin-left: 50%;
   text-align: center;
   transform: translate(-50%, -50%);
+}
+
+.Instalaciones {
+  width: 100%;
+  margin: auto;
+  margin-top: 10%;
+  overflow: hidden;
+  height: 80vh;
+}
+
+.Instalaciones ul {
+  padding: 0;
+  display: flex;
+  width: 1000%;
+
+  animation: cambio 50s infinite alternate ease-in;
+}
+
+.Instalaciones li {
+  list-style: none;
+  width: 100%;
+}
+
+.Instalaciones img {
+  width: 100%;
+  margin-top: -20%;
+}
+
+@keyframes cambio {
+  0% {
+    margin-left: 0;
+  }
+  8% {
+    margin-left: 0;
+  }
+
+  10% {
+    margin-left: -100%;
+  }
+  18% {
+    margin-left: -100%;
+  }
+  20% {
+    margin-left: -200%;
+  }
+  28% {
+    margin-left: -200%;
+  }
+
+  30% {
+    margin-left: -300%;
+  }
+  38% {
+    margin-left: -300%;
+  }
+  40% {
+    margin-left: -400%;
+  }
+  48% {
+    margin-left: -400%;
+  }
+
+  50% {
+    margin-left: -500%;
+  }
+  58% {
+    margin-left: -500%;
+  }
+  60% {
+    margin-left: -600%;
+  }
+  68% {
+    margin-left: -600%;
+  }
+
+  70% {
+    margin-left: -700%;
+  }
+  78% {
+    margin-left: -700%;
+  }
+  80% {
+    margin-left: -800%;
+  }
+  88% {
+    margin-left: -800%;
+  }
+
+  90% {
+    margin-left: -900%;
+  }
+  100% {
+    margin-left: -900%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
@@ -462,13 +558,15 @@ form {
 /* Full-width inputs */
 input[type="text"],
 input[type="password"],
-input[type="email"] {
+input[type="email"],
+textarea {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 10px;
   display: inline-block;
   border: 1px solid #474747f1;
   box-sizing: border-box;
+  resize: none;
 }
 
 /* Set a style for all buttons */
@@ -633,7 +731,7 @@ span.psw {
 }
 
 /* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1920px) and (min-width: 768px) {
   .Blema,
   .Blema2 {
     display: inline-block;
@@ -926,7 +1024,9 @@ span.psw {
   }
   input[type="text"],
   input[type="password"],
-  input[type="email"] {
+  input[type="email"],
+  textarea {
+    resize: none;
     margin-left: 0;
     margin-right: 0;
   }
@@ -967,7 +1067,10 @@ span.psw {
     width: 100%;
   }
   input[type="text"],
-  input[type="password"] {
+  input[type="password"],
+  input[type="email"],
+  textarea {
+    resize: none;
     margin-left: 0;
     margin-right: 0;
   }
@@ -1006,7 +1109,10 @@ span.psw {
     width: 100%;
   }
   input[type="text"],
-  input[type="password"] {
+  input[type="password"],
+  input[type="email"],
+  textarea {
+    resize: none;
     margin-left: 0;
     margin-right: 0;
   }
@@ -1023,7 +1129,10 @@ span.psw {
   }
 
   input[type="text"],
-  input[type="password"] {
+  input[type="password"],
+  input[type="email"],
+  textarea {
+    resize: none;
     margin-left: 0;
     margin-right: 0;
   }
@@ -1091,7 +1200,10 @@ span.psw {
   }
 
   input[type="text"],
-  input[type="password"] {
+  input[type="password"],
+  input[type="email"],
+  textarea {
+    resize: none;
     margin-left: 0;
     margin-right: 0;
   }
