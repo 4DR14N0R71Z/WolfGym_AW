@@ -1,0 +1,14 @@
+create table LOGIN (
+    Id int primary key auto_increment,
+    Email varchar (50),
+    Pass varchar(200),
+    Tipo char (15),
+    Imagen varchar (150),
+    Status char (10)
+);
+
+Insert into login (Email, Pass, Tipo, Imagen, Status) VALUES 
+('Admin@mail.com', 123456, 'Admin', 'persona1.jpg', 'Activo'),
+('Super@mail.com', 123456, 'Super', 'persona2.jpg', 'Activo'),
+('User@mail.com', 123456, 'User', 'persona3.jpg', 'Activo');
+

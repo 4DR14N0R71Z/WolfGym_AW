@@ -2,95 +2,159 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="UTF-8">
-    <title>Wolf Gym</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/WG.png" type="image/x-icon">
-    <meta name="viewport" content="width=device-width, user-scalable=none initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Inicio | WolfGym</title>
+  <?php
+    include_once "front-end/dashboard/head.php"
+  ?>
 </head>
 
 <body>
   <div class="contenedor">
-    <div class="nav"></div>
-    <section id="home">
+  <section id="home">
       <div class="himg"><a href="#"><img src="images/FLogo.png" alt="Logo de WolfGym"></a></div>
-      <header>
-        <div class="nav">
-          <ul id="menu">
-            <li><a href="#home">Inicio</a></li>
-            <li><a href="#coaches">Coaches</a></li>
-            <li><a href="#equipo">Equipo</a></li>
-            <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#login">Iniciar sesión</a></li>
-          </ul>
-        </div>
+    <header>
+        <?php
+        include_once "front-end/dashboard/header.php"
+        ?>
       </header>
-      <article class="boxtext">
-        <p class="Pboxtext">
-        <h2>Inicio</h2>boxtext1Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum laboriosam illo, ad ullam, voluptatem rerum,
-        ipsa totam porro minus cumque dolor hic qui. Consequuntur saepe magnam ullam laudantium esse quaerat!</p>
-      </article>
-      <article class="boxtext2">
-        <p class="Pboxtext">
-        <h3>Misión</h3>BT2Ser el centro de fitness más grande de latinoamérica y el mundo</p>
-      </article>
-      <article class="boxtext3">
-        <p class="Pboxtext">BT3Lorem ipsum, dolor sit amet consectetur adipisicing elit. Architecto, corrupti. Praesentium blanditiis minus amet eaque fugiat temporibus modi aliquid quod laudantium. Mollitia repellat dignissimos porro saepe beatae cupiditate, veritatis accusamus.</p>
-      </article>
+      <div class="Blema" id="blur">
+      <p class="entrena">Entrena</p>
+      <div class="Blema2">
+      <ul class="lema">
+        <li>Duro</li>
+        <li>Diario</li>
+        <li>Salvaje</li>
+      </ul>
+      </div>
+      </div>
+       <video id="background" muted autoplay loop>
+         <source src="images/VB.mp4" type="video/mp4">
+        <source src="images/VB.webm" type="video/webm">
+      </video>
     </section>
+  <section id="homes">
+  </section>
     <section id="coaches">
-      <article class="onebox">
-        <div class="oneboximg">
-          <p class="ponebox">
-          Mike Phillips
-        </p><img src="https://as1.ftcdn.net/v2/jpg/00/73/58/96/1000_F_73589699_I4s2nX0Enc3eQ78T6V1SG5Ac9LF7jsxr.jpg" alt="">
-        </div>
-        <div class="oneboximg2">
-          <p class="ponebox2">
-          Amy Fouler
-        </p><img src="https://media.istockphoto.com/photos/portrait-of-a-beautiful-woman-at-the-gym-picture-id856797530?k=20&m=856797530&s=612x612&w=0&h=kFFhoXpDoF6jCmerJe-cZzOMKRvpl2orilNip2t3McU=" alt="">
-        </div>
-        <div class="oneboximg3">
-          <p class="ponebox3">
-          David Guetta
-        </p><img src="https://media.istockphoto.com/photos/muscular-trainer-writing-on-clipboard-picture-id675179390?k=20&m=675179390&s=612x612&w=0&h=7LP7-OamGu-b8XG-VKcJuamK5s80ke-4oJ5siUrjFVA=" alt="">
-        </div>
-        <div class="oneboximg4">
-          <p class="ponebox4">
-          Mike Phillips
-        </p><img src="https://www.muscleandfitness.com/wp-content/uploads/2020/09/THEROCK.jpg?quality=86&strip=all" alt="">
-        </div>
       <h2>Coaches</h2>
-      </article>
+      <div class="galeria">
+        <div class="contenedor-imagenes">
+            <div class="imagen">
+                <img src="https://media.istockphoto.com/photos/confident-gym-owner-picture-id1324042769?b=1&k=20&m=1324042769&s=170667a&w=0&h=jAwDr6qkVDFxds70ODp0rlzaofDKXNhdaKZyfM_l-eQ=" alt="">
+                <div class="overlay">
+                    <h6 class="Cname">David Barrera</h6>
+                    <br/>
+                    <p class="Cdescriptions">                      
+                          Edad: 28 años. <br>
+                          Nacionalidad: Uruguayo. <br>
+                          Miembro desde: 2009.
+                    </p>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://media.istockphoto.com/photos/portrait-of-chinese-personal-trainer-in-gym-picture-id1018043738?k=20&m=1018043738&s=612x612&w=0&h=9qZelesrux2DeXL9OMcoO3hK8cBPaa9qwTc_wHXdo7k=" alt="">
+                <div class="overlay">
+                    <h6 class="Cname">Akira Yamimoto</h6>
+                    <br/>
+                    <p class="Cdescriptions">                      
+                          Edad: 25 años. <br>
+                          Nacionalidad: Japonés. <br>
+                          Miembro desde: 2012.
+                    </p>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://media.istockphoto.com/photos/portrait-of-a-female-personal-trainer-in-the-gym-picture-id1040495528?k=20&m=1040495528&s=170667a&w=0&h=SrqX_8m-4jXcpSKAmWreiW5E9RWZMEDv_sDhz10daC0=" alt="">
+                <div class="overlay">
+                    <h6 class="Cname">Valeria Torrealba</h6>
+                    <br/>
+                    <p class="Cdescriptions">                      
+                          Edad: 25 años. <br>
+                          Nacionalidad: Mexicana. <br>
+                          Miembro desde: 2015.
+                    </p>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://media.istockphoto.com/photos/portrait-of-a-beautiful-woman-at-the-gym-picture-id856797530?k=6&m=856797530&s=612x612&w=0&h=_hDfYO_exuYj3jq157FAr_Al6dA-lCi7lLDtwKmFh48=" alt="">
+                <div class="overlay">
+                    <h6 class="Cname">Valentina Jiménez</h6>
+                    <br/>
+                    <p class="Cdescriptions">                      
+                          Edad: 31 años. <br>
+                          Nacionalidad: Colombiana. <br>
+                          Miembro desde: 2018.
+                    </p>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://media.istockphoto.com/photos/young-african-american-male-personal-trainer-picture-id475395886?k=20&m=475395886&s=612x612&w=0&h=sbFFXC-YWIlWI0kekUv-4iz8SAGKeVNTdu2G0FPJhss=" alt="">
+                <div class="overlay">
+                    <h6 class="Cname">Nathan Jackson</h6>
+                    <br/>
+                    <p class="Cdescriptions">                      
+                          Edad: 32 años. <br>
+                          Nacionalidad: Estadounidense. <br>
+                          Miembro desde: 2014.
+                    </p>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://static8.depositphotos.com/1011643/1067/i/600/depositphotos_10678547-stock-photo-gym-trainer-welcome-customer.jpg" alt="">
+                <div class="overlay">
+                    <h6 class="Cname">Ignacio Ramirez</h6><br/>
+                    <p class="Cdescriptions">                      
+                          Edad: 45 años. <br>
+                          Nacionalidad: Venezolano. <br>
+                          Miembro desde: 2004.
+                    </p>          
+                </div>
+            </div>
+            </div>
+            </div>
     </section>
     <section id="equipo">
-      <h2>Equipo</h2>
-    </section>
+      <h2>Instalaciones</h2>
+      <div class="Instalaciones">
+          <ul>
+            <li><img src="https://www.gimnasioc21.com/s/cc_images/cache_77241085.JPG" alt=""></li>
+            <li><img src="https://truefitness.com/wp-content/uploads/2020/10/Greystone-1-1024x768.jpg" alt=""></li>
+            <li><img src="https://etenonfitness.com/wp-content/uploads/2021/12/gimnasio-1024x768.jpeg" alt=""></li>
+            <li><img src="https://www.gimnasioc21.com/s/cc_images/cache_77241092.JPG" alt=""></li>
+            <li><img src="https://www.albirgardensports.com/wp-content/uploads/2020/09/gimnasio.jpg" alt=""></li>
+            <li><img src="https://www.princess-hotels.com/wp-content/uploads/sites/1738/nggallery/vitalfitness-la-palma//2-fitness.jpg" alt=""></li>
+            <li><img src="https://www.akonfitness.com/wp-content/uploads/2022/05/HomeGymAlicante-4.jpeg.webp" alt=""></li>
+            <li><img src="https://www.purefitness.es/profesional/wp-content/uploads/anytime-fitness-jerez-02-1024x768.jpg" alt=""></li>
+            <li><img src="https://stadioalicante.com/wp-content/uploads/2019/08/sala-fitness-cardio-1-1024x768.jpg" alt=""></li>
+            <li><img src="https://live.staticflickr.com/3487/3308974746_1507366a9a_b.jpg" alt=""></li>
+          </ul>
+      </div>
+ </section>
     <section id="contacto">
       <h2>Contacto</h2>
-    </section>
-    <section id="login">
-      <h2>Iniciar sesión</h2>
-
-      <form action="login.php" method="post">
+      
+      <form action="" method="">
         <div class="imgcontainer">
           <img src="images/FLogo.png" alt="Avatar" class="avatar">
         </div>
-
+  
         <div class="container">
-          <label for="uname"><b>Username</b></label>
-          <input type="text" placeholder="Usuario" name="uname" required>
+          
+          <input type="text" placeholder="Nombre" name="Nombre" required>
 
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Contraseña" name="psw" required>
+          
+          <input type="email" placeholder="Correo electrónico" name="email" required>
+  
+          
+          <input type="text" placeholder="Teléfono" name="phone" required>
 
-          <button type="submit">Login</button>
+          <textarea name="mensaje" placeholder="Escriba su mensaje"></textarea>
+  
+          <button type="submit">ENVIAR MENSAJE</button>
         </div>
       </form>
     </section>
-  </div>
+  <?php
+  include_once "front-end/dashboard/footer.php"
+  ?>
 </body>
+
 </html>

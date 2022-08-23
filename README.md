@@ -1,2 +1,5 @@
 # ProyectoAplicacionesWeb
-Una página como proyecto escolar.
+Una aplicación web como proyecto escolar.
+
+
+2121100617 - Ortiz Bustos Oscar Adrian
